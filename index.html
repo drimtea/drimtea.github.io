@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Тест по английскому языку</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+
+		var result = 0;
+		var noresult = 0;
+
+		function AskQuestion(textBoxId, answer)
+		{
+			var userAnswer = document.getElementById(textBoxId).value;
+			if(userAnswer == answer)
+				result++;
+			else noresult++;
+
+		}
+
+		function AskQuestions()
+		{
+			AskQuestion("userAnswer1", "Is");
+			AskQuestion("userAnswer2", "his");
+			AskQuestion("userAnswer3", "Has");
+			AskQuestion("userAnswer4", "live");
+			AskQuestion("userAnswer5", "Where");
+			AskQuestion("userAnswer6", "There are");
+			AskQuestion("userAnswer7", "'s having");
+			AskQuestion("userAnswer8", "Went");
+			AskQuestion("userAnswer9", "were");
+			AskQuestion("userAnswer10", "would like");
+			AskQuestion("userAnswer11", "play");
+			AskQuestion("userAnswer12", "bigger");
+			AskQuestion("userAnswer13", "seen");
+			AskQuestion("userAnswer14", "have visited");
+			AskQuestion("userAnswer15", "I'm going");
+			AskQuestion("userAnswer16", "Could");
+			AskQuestion("userAnswer17", "I'm living");
+			AskQuestion("userAnswer18", "drove" || "was driving");
+			AskQuestion("userAnswer19", "mine");
+			AskQuestion("userAnswer20", "have been");
+			AskQuestion("userAnswer21", "has been studying");
+			AskQuestion("userAnswer22", "should go");
+			AskQuestion("userAnswer23", "must to study");
+			AskQuestion("userAnswer24", "couldn't see");
+			AskQuestion("userAnswer25", "i were you");
+			AskQuestion("userAnswer26", "tell him");
+			AskQuestion("userAnswer27", "i had");
+			AskQuestion("userAnswer28", "see");
+			AskQuestion("userAnswer29", "would have given");
+			AskQuestion("userAnswer30", "might be");
+
+
+
+		    if (result == 30)
+		    	alert('Вы ответили правильно на все вопросы');
+		    else
+		    {
+		    	alert('Вы ответили павильно,' +result);
+                alert('Вы ответили не правильно,' +noresult);
+			}
+                
+		}		
+
+		
+	</script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		
+	</div>
+<div id="content">
+	<h1>Тест для определения уровня владения английским языком</h1>
+    <div id="center">	
+					
+	    <div id="box">
+	    	<h3>Соблюдайте регистр при вводе ответа!</h3>
+	    	<p>1. ________________ your brother a teacher?</p>
+	    	<p>Are</p>
+	    	<p>Is</p>
+	    	<p>Does</p>
+	    	<p>Have</p>
+	    	<input type="text" id="userAnswer1">
+
+            <p>2. What’s _____________name?</p>
+            <p>him</p>
+            <p>he</p>
+            <p>his</p>
+            <p>John</p>
+            <input type="text" id="userAnswer2">
+
+            <p>3. ____________________he got a car?</p>
+            <p>Has</p>
+            <p>Is</p>
+            <p>Have</p>
+            <p>Does</p>
+            <input type="text" id="userAnswer3">
+
+            <p>4. They __________ in a big house in the centre of town.</p>
+            <p>leave</p>
+            <p>lives</p>
+            <p>live</p>
+            <p>have</p>
+            <input type="text" id="userAnswer4">
+
+            <p>5. _________is the post office?​</p>
+            <p>When</p>
+            <p>Who</p>
+            <p>Where</p>
+            <p>Why</p>
+            <input type="text" id="userAnswer5">
+
+            <p>6. ____________hundreds of people in the street</p>
+            <p>There is</p>
+            <p>Have</p>
+            <p>Trere are</p>
+            <p>there have</p>
+            <input type="text" id="userAnswer6">
+
+            <p>7. Can I speak to Helen please? – Sorry, she________a bath at the moment</p>
+            <p>have</p>
+            <p>having</p>
+            <p>has</p>
+            <p>'s having</p>
+            <input type="text" id="userAnswer7">
+
+            <p>8. We_______________to the theatre last night</p>
+            <p>have been</p>
+            <p>have done</p>
+            <p>go</p>
+            <p>Went</p>
+            <input type="text" id="userAnswer8">
+
+            <p>9. They_____________at home yesterday</p>
+            <p>was</p>
+            <p>are</p>
+            <p>were</p>
+            <p>have been</p>
+            <input type="text" id="userAnswer9">
+
+            <p>10. I ________________ to go to a restaurant this evening</p>
+            <p>like</p>
+            <p>do like</p>
+            <p>would like</p>
+            <p>am liking</p>
+            <input type="text" id="userAnswer10">
+
+            <p>11. I have a broken leg so I can’t______________________.</p>
+            <p>am playing</p>
+            <p>can play</p>
+            <p>play</p>
+            <p>can't play</p>
+            <input type="text" id="userAnswer11">
+
+            <p>12.  London is ___________________than Tallin</p>
+            <p>bigger</p>
+            <p>more big</p>
+            <p>much big</p>
+            <p>big</p>
+            <input type="text" id="userAnswer12">
+
+            <p>13.  Have you ever ______________that film?</p>
+            <p>seed</p>
+            <p>saw</p>
+            <p>see</p>
+            <p>seen</p>
+            <input type="text" id="userAnswer13">
+
+            <p>14.  They _______________ us three times since last Christmas</p>
+            <p>visit</p>
+            <p>have visited</p>
+            <p>are visiting</p>
+            <p>visited</p>
+            <input type="text" id="userAnswer14">
+
+            <p>15. Have you got any plans for your holidays? – Yes_________to Ital next week</p>
+            <p>I'm going</p>
+            <p>I go</p>
+            <p>I'll go</p>
+            <p>I'd go</p>
+            <input type="text" id="userAnswer15">
+
+            <p>16. ________________you open the door for me please?</p>
+            <p>Do</p>
+            <p>Are</p>
+            <p>Could</p>
+            <p>Have</p>
+            <input type="text" id="userAnswer16">
+
+            <p>17. I normally live in London but this year ___________ in Tallinn</p>
+            <p>I live</p>
+            <p>I'm living</p>
+            <p>I do live</p>
+            <p>I would have</p>
+            <input type="text" id="userAnswer17">
+
+            <p>18. When the accident happened she____________from Tallinn to Tartu</p>
+            <p>is driving</p>
+            <p>drives</p>
+            <p>drove</p>
+            <p>was driving</p>
+            <input type="text" id="userAnswer18">
+
+            <p>19. Don’t touch that book. It’s ______________</p>
+            <p>me</p>
+            <p>mine</p>
+            <p>of me</p>
+            <p>my</p>
+            <input type="text" id="userAnswer19">
+
+            <p>20. I work at Soros International House as a teacher. I __________a teacher for ten years.</p>
+            <p>am</p>
+            <p>have been</p>
+            <p>work</p>
+            <p>was</p>
+            <input type="text" id="userAnswer20">
+
+            <p>21. She___________Estonian since arrived in Tallinn last year</p>
+            <p>has been studying</p>
+            <p>studies</p>
+            <p>is studying</p>
+            <p>studied</p>
+            <input type="text" id="userAnswer21">
+
+            <p>22. Your leg looks bad – you_________to see a doctor</p>
+            <p>have</p>
+            <p>should go</p>
+            <p>going</p>
+            <p>ought to</p>
+            <input type="text" id="userAnswer22">
+
+            <p>23. You_____________harder if you want to pass the exam</p>
+            <p>are studying</p>
+            <p>must study</p>
+            <p>must to study</p>
+            <p>have study</p>
+            <input type="text" id="userAnswer23">
+
+            <p>24. He said it was very dark so he ______________.</p>
+            <p>can't see</p>
+            <p>saw</p>
+            <p>couldn't see</p>
+            <p>can't saw</p>
+            <input type="text" id="userAnswer24">
+
+            <p>25. He’s got a problem. If ________________, I’d talk to him about it</p>
+            <p>i am you</p>
+            <p>you were me</p>
+            <p>i were you</p>
+            <p>i had you</p>
+            <input type="text" id="userAnswer25">
+
+            <p>26. Why don’t you _________________ that you love him?</p>
+            <p>say him</p>
+            <p>tell to him</p>
+            <p>tell</p>
+            <p>tell him</p>
+            <input type="text" id="userAnswer26">
+
+            <p>27. I’m so poor! If ___________________more money, I’d buy a car.</p>
+            <p>i had</p>
+            <p>i have</p>
+            <p>i'd have</p>
+            <p>i'll have</p>
+            <input type="text" id="userAnswer27">
+
+            <p>28. If you__________________her, say hello</p>
+            <p>saw</p>
+            <p>have seen</p>
+            <p>see</p>
+            <p>will see</p>
+            <input type="text" id="userAnswer28">
+
+            <p>29. (I didn’t meet them) If I’d met them, I___________them the presents</p>
+            <p>gave</p>
+            <p>have given</p>
+            <p>would have given</p>
+            <p>would give</p>
+            <input type="text" id="userAnswer29">
+
+            <p>30. I don’t know where Kathy is exactly, she _____________ at home.</p>
+            <p>is</p>
+            <p>can be</p>
+            <p>might be</p>
+            <p>is being</p>
+            <input type="text" id="userAnswer30">
+
+
+
+
+
+            <br><br/>
+            <a href="#" onclick="AskQuestions();">Отправить</a>
+	    </div>
+    </div>
+
+
+	
+</div>
+
+</body>
+</html>
