@@ -53,14 +53,18 @@
 			AskQuestion("userAnswer30", "c");
 
 
-
-		    if (result == 30)
+                     $emailTo = 'hazg@bk.ru'; //Сюда введите Ваш email
+                     $body = "userAnswer1: $userAnswer1 \n\nuserAnswer2: $userAnswer2 \n\nuserAnswer3: $userAnswer3";
+                     $headers = 'From: My Site <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+                     mail($emailTo, $subject, $body, $headers);
+                     $emailSent = true;
+		    /*if (result == 30)
 		    	alert('Вы ответили правильно на все вопросы');
 		    else
 		    {
 		    	alert('Вы ответили павильно,' +result);
                 alert('Вы ответили не правильно,' +noresult);
-			}
+			}*/
                 
 		}		
 
