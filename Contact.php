@@ -8,7 +8,8 @@ if (array_key_exists('nameFF', $_POST)) {
    $headers .= "MIME-Version: 1.0\r\n";
    $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
    
-  // echo $_POST['nameFF'];
+  
 }
 mail($to, $subject, $message, $headers);
+ echo $_POST['nameFF'];
 ?>
