@@ -1,302 +1,53 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset='utf-8'>
-	<title>Тест по английскому языку</title>
-	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript">
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Drimtea.GitHub.io by drimtea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Drimtea.GitHub.io</h1>
+      <h2 class="project-tagline"></h2>
+    </section>
 
-		var result = 0;
-		var noresult = 0;
+    <section class="main-content">
+      <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-		function AskQuestion(textBoxId, answer)
-		{
-			var userAnswer = document.getElementById(textBoxId).value;
-			if(userAnswer == answer)
-				result++;
-			else noresult++;
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
 
-		}
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-		function AskQuestions()
-		{
-			AskQuestion("userAnswer1", "b");
-			AskQuestion("userAnswer2", "c");
-			AskQuestion("userAnswer3", "a");
-			AskQuestion("userAnswer4", "c");
-			AskQuestion("userAnswer5", "c");
-			AskQuestion("userAnswer6", "c");
-			AskQuestion("userAnswer7", "d");
-			AskQuestion("userAnswer8", "d");
-			AskQuestion("userAnswer9", "c");
-			AskQuestion("userAnswer10", "c");
-			AskQuestion("userAnswer11", "c");
-			AskQuestion("userAnswer12", "a");
-			AskQuestion("userAnswer13", "d");
-			AskQuestion("userAnswer14", "b");
-			AskQuestion("userAnswer15", "a");
-			AskQuestion("userAnswer16", "c");
-			AskQuestion("userAnswer17", "b");
-			AskQuestion("userAnswer18", "c" || "d");
-			AskQuestion("userAnswer19", "b");
-			AskQuestion("userAnswer20", "b");
-			AskQuestion("userAnswer21", "a");
-			AskQuestion("userAnswer22", "b");
-			AskQuestion("userAnswer23", "c");
-			AskQuestion("userAnswer24", "c");
-			AskQuestion("userAnswer25", "c");
-			AskQuestion("userAnswer26", "d");
-			AskQuestion("userAnswer27", "a");
-			AskQuestion("userAnswer28", "c");
-			AskQuestion("userAnswer29", "c");
-			AskQuestion("userAnswer30", "c");
+<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
 
-                    if (result == 30)
-		    	alert('Вы ответили правильно на все вопросы');
-		    else
-		    {
-		    	alert('Вы ответили павильно,' +result);
-                	alert('Вы ответили не правильно,' +noresult);
-		    }
-                
-		}		
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
 
-		
-	</script>
-</head>
-<body>
-	<div id="header">
-		<a href="http://filateya.ru">Главная</a>
-		
-	</div>
-<div id="content">
-	<h1>Тест для определения уровня владения английским языком</h1>
-    <div id="center">	
-					
-	    <div id="box">
-	    	<h3>Введите вариант правильного ответа(a, b, c, d). Соблюдайте регистр при вводе ответа!</h3>
-	    	<p>1. ________________ your brother a teacher?</p>
-	    	<p>a) Are</p>
-	    	<p>b) Is</p>
-	    	<p>c) Does</p>
-	    	<p>d) Have</p>
-	    	<input type="text" id="userAnswer1">
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-            <p>2. What’s _____________name?</p>
-            <p>a) him</p>
-            <p>b) he</p>
-            <p>c) his</p>
-            <p>d) John</p>
-            <input type="text" id="userAnswer2">
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-            <p>3. ____________________he got a car?</p>
-            <p>a) Has</p>
-            <p>b) Is</p>
-            <p>c) Have</p>
-            <p>d) Does</p>
-            <input type="text" id="userAnswer3">
+<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-            <p>4. They __________ in a big house in the centre of town.</p>
-            <p>a) leave</p>
-            <p>b) lives</p>
-            <p>c) live</p>
-            <p>d) have</p>
-            <input type="text" id="userAnswer4">
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-            <p>5. _________is the post office?​</p>
-            <p>a) When</p>
-            <p>b) Who</p>
-            <p>c) Where</p>
-            <p>d) Why</p>
-            <input type="text" id="userAnswer5">
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
 
-            <p>6. ____________hundreds of people in the street</p>
-            <p>a) There is</p>
-            <p>b) Have</p>
-            <p>c) Trere are</p>
-            <p>d) there have</p>
-            <input type="text" id="userAnswer6">
+      <footer class="site-footer">
 
-            <p>7. Can I speak to Helen please? – Sorry, she________a bath at the moment</p>
-            <p>a) have</p>
-            <p>b) having</p>
-            <p>c) has</p>
-            <p>d) 's having</p>
-            <input type="text" id="userAnswer7">
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
 
-            <p>8. We_______________to the theatre last night</p>
-            <p>a) have been</p>
-            <p>b) have done</p>
-            <p>c) go</p>
-            <p>d) Went</p>
-            <input type="text" id="userAnswer8">
+    </section>
 
-            <p>9. They_____________at home yesterday</p>
-            <p>a) was</p>
-            <p>b) are</p>
-            <p>c) were</p>
-            <p>d) have been</p>
-            <input type="text" id="userAnswer9">
-
-            <p>10. I ________________ to go to a restaurant this evening</p>
-            <p>a) like</p>
-            <p>b) do like</p>
-            <p>c) would like</p>
-            <p>d) am liking</p>
-            <input type="text" id="userAnswer10">
-
-            <p>11. I have a broken leg so I can’t______________________.</p>
-            <p>a) am playing</p>
-            <p>b) can play</p>
-            <p>c) play</p>
-            <p>d) can't play</p>
-            <input type="text" id="userAnswer11">
-
-            <p>12.  London is ___________________than Tallin</p>
-            <p>a) bigger</p>
-            <p>b) more big</p>
-            <p>c) much big</p>
-            <p>d) big</p>
-            <input type="text" id="userAnswer12">
-
-            <p>13.  Have you ever ______________that film?</p>
-            <p>a) seed</p>
-            <p>b) saw</p>
-            <p>c) see</p>
-            <p>d) seen</p>
-            <input type="text" id="userAnswer13">
-
-            <p>14.  They _______________ us three times since last Christmas</p>
-            <p>a) visit</p>
-            <p>b) have visited</p>
-            <p>c) are visiting</p>
-            <p>d) visited</p>
-            <input type="text" id="userAnswer14">
-
-            <p>15. Have you got any plans for your holidays? – Yes_________to Ital next week</p>
-            <p>a) I'm going</p>
-            <p>b) I go</p>
-            <p>c) I'll go</p>
-            <p>d) I'd go</p>
-            <input type="text" id="userAnswer15">
-
-            <p>16. ________________you open the door for me please?</p>
-            <p>a) Do</p>
-            <p>b) Are</p>
-            <p>c) Could</p>
-            <p>d) Have</p>
-            <input type="text" id="userAnswer16">
-
-            <p>17. I normally live in London but this year ___________ in Tallinn</p>
-            <p>a) I live</p>
-            <p>b) I'm living</p>
-            <p>c) I do live</p>
-            <p>d) I would have</p>
-            <input type="text" id="userAnswer17">
-
-            <p>18. When the accident happened she____________from Tallinn to Tartu</p>
-            <p>a) is driving</p>
-            <p>b) drives</p>
-            <p>c) drove</p>
-            <p>d) was driving</p>
-            <input type="text" id="userAnswer18">
-
-            <p>19. Don’t touch that book. It’s ______________</p>
-            <p>a) me</p>
-            <p>b) mine</p>
-            <p>c) of me</p>
-            <p>d) my</p>
-            <input type="text" id="userAnswer19">
-
-            <p>20. I work at Soros International House as a teacher. I __________a teacher for ten years.</p>
-            <p>a) am</p>
-            <p>b) have been</p>
-            <p>c) work</p>
-            <p>d) was</p>
-            <input type="text" id="userAnswer20">
-
-            <p>21. She___________Estonian since arrived in Tallinn last year</p>
-            <p>a) has been studying</p>
-            <p>b) studies</p>
-            <p>c) is studying</p>
-            <p>d) studied</p>
-            <input type="text" id="userAnswer21">
-
-            <p>22. Your leg looks bad – you_________to see a doctor</p>
-            <p>a) have</p>
-            <p>b) should go</p>
-            <p>c) going</p>
-            <p>d) ought to</p>
-            <input type="text" id="userAnswer22">
-
-            <p>23. You_____________harder if you want to pass the exam</p>
-            <p>a) are studying</p>
-            <p>b) must study</p>
-            <p>c) must to study</p>
-            <p>d) have study</p>
-            <input type="text" id="userAnswer23">
-
-            <p>24. He said it was very dark so he ______________.</p>
-            <p>a) can't see</p>
-            <p>b) saw</p>
-            <p>c) couldn't see</p>
-            <p>d) can't saw</p>
-            <input type="text" id="userAnswer24">
-
-            <p>25. He’s got a problem. If ________________, I’d talk to him about it</p>
-            <p>a) i am you</p>
-            <p>b) you were me</p>
-            <p>c) i were you</p>
-            <p>d) i had you</p>
-            <input type="text" id="userAnswer25">
-
-            <p>26. Why don’t you _________________ that you love him?</p>
-            <p>a) say him</p>
-            <p>b) tell to him</p>
-            <p>c) tell</p>
-            <p>d) tell him</p>
-            <input type="text" id="userAnswer26">
-
-            <p>27. I’m so poor! If ___________________more money, I’d buy a car.</p>
-            <p>a) i had</p>
-            <p>b) i have</p>
-            <p>c) i'd have</p>
-            <p>d) i'll have</p>
-            <input type="text" id="userAnswer27">
-
-            <p>28. If you__________________her, say hello</p>
-            <p>a) saw</p>
-            <p>b) have seen</p>
-            <p>c) see</p>
-            <p>d) will see</p>
-            <input type="text" id="userAnswer28">
-
-            <p>29. (I didn’t meet them) If I’d met them, I___________them the presents</p>
-            <p>a) gave</p>
-            <p>b) have given</p>
-            <p>c) would have given</p>
-            <p>d) would give</p>
-            <input type="text" id="userAnswer29">
-
-            <p>30. I don’t know where Kathy is exactly, she _____________ at home.</p>
-            <p>a) is</p>
-            <p>b) can be</p>
-            <p>c) might be</p>
-            <p>d) is being</p>
-            <input type="text" id="userAnswer30">
-
-
-
-
-            <br><br/>
-            <a href="#" onclick="AskQuestions();">Сдать</a>
-	    </div>
-    </div>
-
-
-	
-</div>
-
-</body>
+  
+  </body>
 </html>
