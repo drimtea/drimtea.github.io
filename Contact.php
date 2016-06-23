@@ -8,7 +8,7 @@ if (array_key_exists('nameFF', $_POST)) {
    $headers .= "From: <". $from .">\r\n";
    $headers .= "MIME-Version: 1.0\r\n"; 
    $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
-   $message = 'Имя: '.$_POST['nameFF'].''\nEmail: ''.$_POST['contactFF'].''\nIP: ''.$_SERVER['REMOTE_ADDR'].''\nТелефон: ''.$_POST['telFF'].''\nГород: ''.$_POST['cityFF'];
+   $message = "Имя: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nТелефон: ".$_POST['telFF']."\nГород: ".$_POST['cityFF'];
    mail($to, $subject, $message, $headers);
    echo $_POST['nameFF'];
 }
