@@ -1,15 +1,16 @@
 <?
 if (array_key_exists('nameFF', $_POST)) {
-   $to = "U-English@mai.ru";
-   $subject = "Заполнена контактная форма с ".$_SERVER['HTTP_REFERER'];
-   $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
-   $message = "Имя: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nТелефон: ".$_POST['telFF']."\nГород: ".$_POST['cityFF'];
-   $headers = "Content-type: text/plain; charset="utf-8"";
-   $headers .= "MIME-Version: 1.0\r\n";
+   $to = 'U-English@mai.ru';
+   $from = 'hazg@bk.ru'
+   $subject = 'Заполнена контактная форма с '.$_SERVER['HTTP_REFERER'];
+   $subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
+   $headers = "Content-type: text/plain; charset=\"utf-8\"\r\n";
+   $headers .= "From: <". $from .">\r\n";
+   $headers .= "MIME-Version: 1.0\r\n"; 
    $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
-   
-  
+   $message = 'Имя: '.$_POST['nameFF'].''\nEmail: ''.$_POST['contactFF'].''\nIP: ''.$_SERVER['REMOTE_ADDR'].''\nТелефон: ''.$_POST['telFF'].''\nГород: ''.$_POST['cityFF'];
+   mail($to, $subject, $message, $headers);
+   echo $_POST['nameFF'];
 }
-mail($to, $subject, $message, $headers);
- echo $_POST['nameFF'];
+
 ?>
