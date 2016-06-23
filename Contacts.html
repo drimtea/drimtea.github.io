@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<style>
+.feedback-form {
+  max-width: 400px;
+  padding: 2%;
+  border-radius: 3px;
+  background: #f1f1f1;
+}
+.feedback-form [required] {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 2px 0 2% 0;
+  padding: 2%;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 transparent;
+}
+.feedback-form [required]:hover {
+  border-color: #7eb4ea;
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 transparent;
+}
+.feedback-form [required]:focus {
+  outline: none;
+  border-color: #7eb4ea;
+  box-shadow: 0 1px 2px -1px rgba(0,0,0,.2) inset, 0 0 4px rgba(35,146,243,.5);
+  transition: .2s linear;
+}
+.feedback-form [type="submit"] {
+  padding: 2%;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.2) inset;
+  background: #669acc;
+  color: #fff;
+}
+.feedback-form [type="submit"]:hover {
+  background: #5c90c2;
+}
+.feedback-form [type="submit"]:focus {
+  box-shadow: 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+</style>
+<form method="POST" class="feedback-form">
+Как к Вам обращаться:
+<input type="text" name="nameFF" required placeholder="фамилия имя отчество" x-autocompletetype="name">
+Email для связи:
+<input type="email" name="contactFF" required placeholder="адрес электронной почты" x-autocompletetype="email">
+Телефон:
+<input name="telFF" required placeholder="например, 89000000000" x-autocompletetype="tel" type="tel">
+Город
+<input name="cityFF" placeholder="например, Самара" x-autocompletetype="address-level2" type="text">
+<input type="submit" value="отправить">
+</form>
+
+<script>
+Array.prototype.slice.call(document.querySelectorAll('.feedback-form')).forEach(function(a) {
+a.addEventListener('submit', function(evt){
+  var http = new XMLHttpRequest(), f = this;
+  evt.preventDefault();
+  http.open("POST", "C:\Users\AAT\Desktop\Основы программирования\contact.php", true);
+  http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  http.send("nameFF=" + f.nameFF.value + "&contactFF=" + f.contactFF.value + "&telFF=" + f.telFF.value + "&cityFF=" + f.cityFF.value);
+  http.onreadystatechange = function() {
+    if (http.readyState == 4 && http.status == 200) {
+      alert(http.responseText + ', Ваше сообщение получено.\nНаши специалисты ответят Вам в течении 2-х дней.\nБлагодарим за интерес к нашей фирме!');
+    }
+  }
+  http.onerror = function() {
+    alert('Извините, данные не были переданы');
+  }
+}, false);
+})
+</script>
