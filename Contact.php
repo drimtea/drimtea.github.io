@@ -72,6 +72,6 @@ class Mailer
    $message = "Имя: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nТелефон: ".$_POST['telFF']."\nГород: ".$_POST['cityFF'];
    mail($to, $subject, $message, $headers,'-f'.$from);
    echo $_POST['nameFF'];
-}
+}*/
 
-?>*/
+?>
