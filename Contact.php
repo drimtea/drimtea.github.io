@@ -1,6 +1,6 @@
 <?
 if (array_key_exists('nameFF', $_POST)) {
-   $to = 'hazg@bk.ru';
+   $to = 'krylov.aat@yandex.ru';
    $subject = 'Заполнена контактная форма с '.$_SERVER['HTTP_REFERER'];
    $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
    $message = "Имя: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nТелефон: ".$_POST['telFF']."\nГород: ".$_POST['cityFF'];
