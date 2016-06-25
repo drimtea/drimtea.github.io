@@ -1,6 +1,6 @@
-<?php
 
-class Mailer 
+
+/*class Mailer 
 { 
 
     public $to;     
@@ -57,10 +57,10 @@ class Mailer
     $mail -> createFrom($from); 
     $mail -> createSubject($subject); 
     $mail -> createHeader(); 
-    $mail -> sendMail($message);
+    $mail -> sendMail($message);*/
 
-//<?
-/*if (array_key_exists('nameFF', $_POST)) {
+<?
+if (array_key_exists('nameFF', $_POST)) {
    $to = 'U-English@mai.ru';
    $from = 'hazg@bk.ru'
    $subject = 'Заполнена контактная форма с '.$_SERVER['HTTP_REFERER'];
@@ -72,6 +72,6 @@ class Mailer
    $message = "Имя: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nТелефон: ".$_POST['telFF']."\nГород: ".$_POST['cityFF'];
    mail($to, $subject, $message, $headers,'-f'.$from);
    echo $_POST['nameFF'];
-}*/
+}
 
 ?>
